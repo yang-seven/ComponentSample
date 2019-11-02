@@ -14,18 +14,20 @@ import com.alibaba.android.arouter.facade.template.IProvider;
  * Description:
  */
 
-public abstract class  BaseMethodProvider implements IProvider {
+public abstract class BaseMethodProvider implements IProvider {
 
     private Context mContext;
+
     @Override
     public void init(Context context) {
-        this.mContext=context;
+        this.mContext = context;
     }
 
-    public Context getContext(){
+    public Context getContext() {
         return mContext;
     }
-   public abstract void method();
+
+    public abstract void method();
 
     public abstract void asyncMethod(AsyncProviderCallBack asyncProviderCallBack);
 
