@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AModuleActivity">
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="当前是模块A!" />
+
+
+    <TextView
+        android:onClick="jump2ModuleB"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="跳转到模块B!" />
+
+    <TextView
+        android:onClick="callModuleBMethod"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="调用模块B的方法" />
+    <TextView
+        android:onClick="callModuleBMethodAsync"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="调用模块B的异步方法" />
+
+</LinearLayout>
